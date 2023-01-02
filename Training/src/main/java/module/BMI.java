@@ -56,7 +56,7 @@ public class BMI {
    * @return
    */
   public static String isHealth(double bmi, double height) {
-    if (bmi >= Constant.underBmi && Constant.topBmi >= bmi) {
+    if (bmi >= Constant.underBmi && Constant.topBmi > bmi) {
       return Constant.TureIsHealth;
     } else {
       return healthMessage(height);
